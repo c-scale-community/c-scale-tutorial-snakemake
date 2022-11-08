@@ -1,0 +1,8 @@
+name: plot_data
+channels:
+ - conda-forge
+ - defaults
+dependencies:
+  - xarray
+  - rioxarray
+  - matplotlib

@@ -1,0 +1,6 @@
+name: unzip_data
+channels:
+ - conda-forge
+ - defaults
+dependencies:
+  - unzip
