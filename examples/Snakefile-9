@@ -1,0 +1,10 @@
+rule count_countries:
+    input:
+        "countries/european-countries.txt",
+        "countries/other-countries.txt"
+    output:
+        "stats/number-of-countries.txt"
+    conda:
+        "envs/count_countries.yaml"
+    shell:
+        "wc --lines {input} > {output}"

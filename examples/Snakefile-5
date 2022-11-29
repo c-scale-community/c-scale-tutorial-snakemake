@@ -1,0 +1,12 @@
+
+configfile: "config.yaml"
+
+rule count_countries:
+    input:
+        expand("{input}", input=config['european']),
+        expand("{input}", input=config['other'])
+    output:
+        "stats/number-of-countries.txt"
+
+    shell:
+        "wc --lines {input} > {output}"

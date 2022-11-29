@@ -1,0 +1,16 @@
+rule pre_processing:
+    input:
+        "stats/number-of-countries.txt"
+    output:
+        "pre-processing.done"
+    shell:
+        "touch pre-processing.done"
+
+rule count_countries:
+    input:
+        "countries/european-countries.txt",
+        "countries/other-countries.txt"
+    output:
+        "stats/number-of-countries.txt"
+    shell:
+        "wc --lines {input} > {output}"

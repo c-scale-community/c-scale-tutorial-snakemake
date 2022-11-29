@@ -1,0 +1,9 @@
+include: "Snakefile-8a"
+
+rule pre_processing:
+    input:
+        "stats/number-of-countries.txt"
+    output:
+        "pre-processing.done"
+    shell:
+        "touch pre-processing.done"

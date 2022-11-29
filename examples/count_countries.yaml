@@ -1,0 +1,6 @@
+name: count_countries
+channels:
+ - conda-forge
+ - defaults
+dependencies:
+  - coreutils

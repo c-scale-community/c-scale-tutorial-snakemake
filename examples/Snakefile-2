@@ -1,0 +1,8 @@
+rule count_countries:
+    input:
+        "european-countries.txt",
+        "other-countries.txt"
+    output:
+        "number-of-countries.txt"
+    shell:
+        "wc --lines {input} > {output}"
