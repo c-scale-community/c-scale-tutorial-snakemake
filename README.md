@@ -25,3 +25,7 @@ git clone https://github.com/c-scale-community/c-scale-tutorial-snakemake.git
 cd c-scale-tutorial-snakemake/
 snakemake -c1 plot_data --use-conda --conda-frontend mamba
 ```
+# Slides
+
+See [slides](https://docs.google.com/presentation/d/1PEDx7_YtHzAKvWVzpgHFFx9kAv2u-bzp/)
+from our last tutorial on 29th November 2022.
