@@ -29,3 +29,7 @@ snakemake -c1 plot_data --use-conda --conda-frontend mamba
 
 See [slides](https://docs.google.com/presentation/d/1PEDx7_YtHzAKvWVzpgHFFx9kAv2u-bzp/)
 from our last tutorial on 29th November 2022.
+
+# Recording
+
+See the recording of the session on [YouTube](https://youtu.be/ktZf7sze1ug).
