@@ -1,6 +1,6 @@
 rule pre_processing:
     input:
-        "stats/number-of-countries.txt"
+        "number-of-countries.txt"
     output:
         "pre-processing.done"
     shell:
@@ -8,9 +8,9 @@ rule pre_processing:
 
 rule count_countries:
     input:
-        "countries/european-countries.txt",
-        "countries/other-countries.txt"
+        "european-countries.txt",
+        "other-countries.txt"
     output:
         "stats/number-of-countries.txt"
     shell:
-        "wc --lines {input} > {output}"
+        "mkdir -p ./stats; wc --lines {input} > {output}"

@@ -1,10 +1,10 @@
 rule count_countries:
     input:
-        "countries/european-countries.txt",
-        "countries/other-countries.txt"
+        "./european-countries.txt",
+        "./other-countries.txt"
     output:
         "stats/number-of-countries.txt"
     log:
         "logs/count_countries.log"
     shell:
-        "wc --lines {input} > {output}"
+        "mkdir -p stats; mkdir -p logs; wc --lines {input} > {output}"
